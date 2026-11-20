@@ -1,0 +1,26 @@
+query_id,method,precision,recall,f1,selected_K
+q1,Vanilla RAG,0.5,1.0,0.6666666666666666,
+q1,Multi-Entity Top-1,0.0,0.0,0.0,1.0
+q1,Multi-Entity Top-3,0.0,0.0,0.0,3.0
+q1,Multi-Entity Top-5,0.0,0.0,0.0,5.0
+q1,Adaptive-K,0.0,0.0,0.0,5.0
+q2,Vanilla RAG,0.75,1.0,0.8571428571428571,
+q2,Multi-Entity Top-1,0.0,0.0,0.0,1.0
+q2,Multi-Entity Top-3,1.0,1.0,1.0,3.0
+q2,Multi-Entity Top-5,1.0,1.0,1.0,5.0
+q2,Adaptive-K,1.0,1.0,1.0,5.0
+q3,Vanilla RAG,0.5,1.0,0.6666666666666666,
+q3,Multi-Entity Top-1,0.0,0.0,0.0,1.0
+q3,Multi-Entity Top-3,0.0,0.0,0.0,3.0
+q3,Multi-Entity Top-5,1.0,1.0,1.0,5.0
+q3,Adaptive-K,1.0,1.0,1.0,5.0
+q4,Vanilla RAG,0.75,1.0,0.8571428571428571,
+q4,Multi-Entity Top-1,0.0,0.0,0.0,1.0
+q4,Multi-Entity Top-3,0.0,0.0,0.0,3.0
+q4,Multi-Entity Top-5,1.0,1.0,1.0,5.0
+q4,Adaptive-K,1.0,1.0,1.0,5.0
+q5,Vanilla RAG,0.5,1.0,0.6666666666666666,
+q5,Multi-Entity Top-1,0.0,0.0,0.0,1.0
+q5,Multi-Entity Top-3,1.0,0.5,0.6666666666666666,3.0
+q5,Multi-Entity Top-5,1.0,0.5,0.6666666666666666,5.0
+q5,Adaptive-K,1.0,0.5,0.6666666666666666,5.0

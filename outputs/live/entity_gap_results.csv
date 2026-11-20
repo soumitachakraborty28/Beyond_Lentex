@@ -1,0 +1,11 @@
+query_id,method,precision,recall,f1,count
+q1,Single/Top-1,0.0,0.0,0.0,1
+q1,Multi-Entity Top-5,0.0,0.0,0.0,5
+q2,Single/Top-1,0.0,0.0,0.0,1
+q2,Multi-Entity Top-5,0.2,0.3333333333333333,0.25,5
+q3,Single/Top-1,0.0,0.0,0.0,1
+q3,Multi-Entity Top-5,0.2,0.5,0.28571428571428575,5
+q4,Single/Top-1,0.0,0.0,0.0,1
+q4,Multi-Entity Top-5,0.2,0.3333333333333333,0.25,5
+q5,Single/Top-1,0.0,0.0,0.0,1
+q5,Multi-Entity Top-5,0.2,0.5,0.28571428571428575,5

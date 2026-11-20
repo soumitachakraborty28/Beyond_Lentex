@@ -1,0 +1,73 @@
+query_id,entity,similarity_score,rank
+q1,breach duty disclosure,0.8649413585662842,1
+q1,duty disclosure material,0.764471709728241,2
+q1,contract breach duty,0.7561668753623962,3
+q1,disclosure material information,0.7469180822372437,4
+q1,duty disclosure,0.712618350982666,5
+q1,contract breach,0.6819716691970825,6
+q1,disclosure material,0.6572736501693726,7
+q1,breach duty,0.5834506750106812,8
+q1,disclosure,0.5794402360916138,9
+q1,material information,0.4714098274707794,10
+q1,breach,0.4584261178970337,11
+q1,information,0.4132062792778015,12
+q1,contract,0.371084600687027,13
+q1,duty,0.31741660833358765,14
+q1,material,0.1982758343219757,15
+q2,kidney disease biomarkers,0.8482417464256287,1
+q2,treatment chronic kidney,0.7331302762031555,2
+q2,chronic kidney disease,0.7295161485671997,3
+q2,chronic kidney,0.6730334758758545,4
+q2,kidney disease,0.5958946943283081,5
+q2,disease biomarkers,0.5302520990371704,6
+q2,drug treatment chronic,0.5233979225158691,7
+q2,biomarkers,0.49419817328453064,8
+q2,kidney,0.4650331437587738,9
+q2,treatment chronic,0.4473661184310913,10
+q2,drug treatment,0.43527406454086304,11
+q2,drug,0.3671521246433258,12
+q2,chronic,0.315010130405426,13
+q2,treatment,0.30183863639831543,14
+q2,disease,0.15968036651611328,15
+q3,jurisdiction contractual obligation,0.9043980836868286,1
+q3,legal jurisdiction contractual,0.8366778492927551,2
+q3,jurisdiction contractual,0.817992091178894,3
+q3,contractual obligation interpretation,0.7999388575553894,4
+q3,contractual obligation,0.7327288389205933,5
+q3,legal jurisdiction,0.6712961196899414,6
+q3,obligation interpretation,0.6376680135726929,7
+q3,jurisdiction,0.6176633834838867,8
+q3,contractual,0.5930188894271851,9
+q3,obligation,0.49483996629714966,10
+q3,interpretation,0.34633541107177734,11
+q3,legal,0.3070036768913269,12
+q4,diagnosis treatment response,0.8597828149795532,1
+q4,response clinical symptoms,0.8377521634101868,2
+q4,patient diagnosis treatment,0.7565634250640869,3
+q4,treatment response clinical,0.712641716003418,4
+q4,clinical symptoms,0.7117307186126709,5
+q4,diagnosis treatment,0.7008379101753235,6
+q4,patient diagnosis,0.6767410039901733,7
+q4,treatment response,0.6613502502441406,8
+q4,response clinical,0.6210780739784241,9
+q4,symptoms,0.5859116315841675,10
+q4,diagnosis,0.5611076951026917,11
+q4,treatment,0.44030922651290894,12
+q4,clinical,0.38214510679244995,13
+q4,patient,0.3774513006210327,14
+q4,response,0.2878265976905823,15
+q5,infringement unauthorized reproduction,0.8583734035491943,1
+q5,copyright infringement unauthorized,0.8216284513473511,2
+q5,copyright infringement,0.7758010029792786,3
+q5,infringement unauthorized,0.7141604423522949,4
+q5,unauthorized reproduction protected,0.7094122171401978,5
+q5,unauthorized reproduction,0.6986666917800903,6
+q5,reproduction protected work,0.6770946979522705,7
+q5,infringement,0.669836699962616,8
+q5,copyright,0.6591450572013855,9
+q5,reproduction protected,0.5249947905540466,10
+q5,protected work,0.5130895972251892,11
+q5,unauthorized,0.4376131296157837,12
+q5,protected,0.34578651189804077,13
+q5,reproduction,0.34384584426879883,14
+q5,work,0.22862350940704346,15
