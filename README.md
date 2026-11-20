@@ -1,33 +1,63 @@
-# Beyond LentEx — Live Research-Gap Experiment
+# Beyond LentEx: Multi-Entity Extraction and Adaptive Entity-Filtered RAG
 
-This runnable experiment is designed around the four research questions in the supplied seminar reports:
+## Overview
+Beyond LentEx explores extensions to entity-aware Retrieval-Augmented Generation (RAG) through multi-entity selection, semantic ranking, and adaptive entity selection.
 
-G1. Does multi-entity extraction improve entity coverage over a single entity?
-G2. Does semantic ranking place useful entities higher than extraction order?
-G3. Does fixed Top-K improve retrieval coverage over strict Top-1?
-G4. Does Adaptive-K choose a better filter size query-by-query?
+The project investigates whether considering multiple query entities can improve document retrieval compared with a single-entity approach.
 
-The program produces:
-1. Entity-level coverage/precision/F1 and redundancy.
-2. Ranking comparison: extraction order vs similarity ranking.
-3. Retrieval comparison: Vanilla RAG, Top-1, Top-3, Top-5, Adaptive-K.
-4. Adaptive-K statistics: average/median/min/max K.
-5. Paired bootstrap CI and p-value for Adaptive vs Top-1.
-6. CSV/Markdown tables suitable for the seminar report.
+## Key Components
 
-IMPORTANT:
-- The program does NOT fabricate gold labels.
-- If you provide official COLIEE/BioASQ data, it uses them.
-- If no official dataset is supplied, `--demo` creates a SMALL SYNTHETIC smoke test so the pipeline can be demonstrated. Demo results MUST NOT be presented as COLIEE/BioASQ results.
-- Published LentEx numbers from the paper are stored separately as reference values; they are never mixed with measured values.
+- Candidate entity generation using lexical extraction.
+- Semantic representation using SentenceTransformers.
+- Entity ranking using cosine similarity.
+- Single-entity and multi-entity retrieval (Top-1, Top-3, Top-5).
+- Adaptive-K retrieval strategy.
+- Retrieval evaluation using Precision, Recall and F1-score.
+- Bootstrap-based comparison of Adaptive-K against the Top-1 baseline.
 
-For a real run:
-  python scripts/run_live.py --dataset path/to/dataset.jsonl --model google/flan-t5-small
+## Methodology
 
-Dataset JSONL schema:
-{"query_id":"q1","query":"...","documents":[{"doc_id":"d1","text":"...","relevant":true}, ...]}
+Query → Candidate Generation → Embedding Generation → Similarity Ranking → Entity Filtering → Document Retrieval → Evaluation.
 
-Optional gold entities:
-{"gold_entities":["entity 1","entity 2"]}
+## Technologies Used
 
-The experiment will use gold document relevance for retrieval metrics.
+- Python
+- SentenceTransformers
+- Scikit-learn
+- NumPy
+- Pandas
+- Cosine Similarity
+
+## Experimental Results
+
+The current experimental run produced:
+
+| Method | F1-score |
+|---|---:|
+| Vanilla RAG | 0.743 |
+| Multi-Entity Top-1 | 0.000 |
+| Multi-Entity Top-3 | 0.333 |
+| Multi-Entity Top-5 | 0.733 |
+| Adaptive-K | 0.733 |
+
+## Dataset
+
+The current implementation uses a local experiment.json file containing queries, documents and relevance information.
+
+This is the experimental dataset used for the current run, not a reproduction of the official COLIEE or BioASQ benchmarks.
+
+## Important Experimental Limitations
+
+- Candidate entities are generated using lightweight lexical extraction rather than a dedicated Named Entity Recognition model.
+- Adaptive-K selected K=5 consistently in the current run.
+- Published LentEx values are reference results, not results reproduced by this implementation.
+- The current experiment does not establish a direct performance improvement over the original LentEx model.
+- Results should be interpreted within the scope of the current experimental dataset.
+
+## Future Scope
+
+- Evaluate on official benchmark datasets.
+- Integrate a dedicated entity extraction model.
+- Improve adaptive threshold selection.
+- Test across larger datasets.
+- Perform direct comparisons with the original LentEx implementation.
